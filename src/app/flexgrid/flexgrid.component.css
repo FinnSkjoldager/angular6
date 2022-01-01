@@ -1,0 +1,28 @@
+.grid1{
+  height:150px;
+  width:150px;
+  background-color: blue;
+}
+.mat-button.active{
+    color: #e4cf11;
+    background-color: blue;
+}
+
+.outlet{
+    margin-top: 4rem;
+     display: flex;
+      justify-content: center;
+}
+.mat-toolbar{
+  background-color: cornflowerblue;
+  color: white;
+  border:2px solid black;
+}
+.mat-button{
+   color: white;
+   background-color: green;
+   margin: 30px;
+}
+.spacer{
+  //flex: 1 1 auto;
+}

@@ -1,0 +1,60 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <span>User Management</span>
+  <div class="spacer"></div>
+  <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+  <a mat-button routerLink="/users" routerLinkActive="active">Users</a>
+  <a mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
+</mat-toolbar>
+<!--div class="outlet">
+  <router-outlet></router-outlet>
+</div-->
+<!--mat-card class="card-demo">
+  <mat-card-title>FINN Grid with Minmax</mat-card-title>
+  <mat-card-content class="containerX">
+    <div class="colorNested" style="height: auto;">
+      <div gdGap="10px" gdColumns="repeat(auto-fill, minmax(200px, 1fr))">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card-->
+<p>home works!</p>
+<div class="container">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+  <div class="item">D</div>
+</div>
+<!--https://codinglatte.com/posts/angular/responsive-app-angular-flex-layout/-->
+<div fxFlex fxLayout="column" fxLayoutGap="10px" style="height:100vh">
+  <!-- content here -->
+</div>
+<div fxFlex fxLayout="column" fxLayoutGap="10px" style="height: 100vh">
+  <div fxLayout="row wrap">
+    <!-- loop over the cardList and show the cards -->
+    <div
+      *ngFor="let card of cardList"
+      fxFlex="25"
+      fxFlex.md="33"
+      fxFlex.sm="50"
+      fxFlex.xs="100"
+      fxLayout="column"
+      style="padding: 5px;"
+    >
+      <!--mat-card class="mat-elevation-z1">
+        <img mat-card-image [src]="card.imgSrc" />
+        <mat-card-title> {{ card.title }} </mat-card-title>
+        <mat-card-content> {{ card.description }} </mat-card-content>
+        <mat-card-footer>
+          <button fxFlex mat-flat-button color="primary">
+            Do Something Button
+          </button>
+        </mat-card-footer>
+      </mat-card-->
+    </div>
+  </div>
+</div>
