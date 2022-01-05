@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './flexgrid.component.html',
   styleUrls: ['./flexgrid.component.css']
 })
-export class FlexgridComponent implements OnInit {
+export class FlexGridComponent implements OnInit {
   public cardList: CardInterface[] = [];
   constructor() { }
   ngOnInit(): void {

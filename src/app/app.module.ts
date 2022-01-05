@@ -6,19 +6,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatCardModule } from '@angular/material/card';
-import { FlexgridComponent } from './flexgrid/flexgrid.component';
-import { Flexgrid1Component } from './flexgrid1/flexgrid1.component';
+import { FlexGridComponent } from './flexgrid/flexgrid.component';
 
 const appRoutes: Routes = [
-  //{ path: '', component: AppComponent },
-  //{ path: 'selv', component: AppComponent },
+    { path: '', component: FlexGridComponent },
+    {path: 'users', component: AppComponent },
+    { path: 'contact', component: AppComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    FlexgridComponent,
-    Flexgrid1Component
+    FlexGridComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +28,6 @@ const appRoutes: Routes = [
     MatCardModule,
   ],
   providers: [],
-  //bootstrap: [AppComponent]
-  bootstrap: [FlexgridComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
